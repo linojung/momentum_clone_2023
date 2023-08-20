@@ -1,6 +1,7 @@
-const any = {
-  thing: function () {
-    return "hello";
-    console.log("bye bye");
-  },
-};
+const age = parseInt(prompt("how old are you?"));
+
+if (isNaN(age)) {
+  console.log("write a number");
+} else {
+  console.log("okeydokey");
+}
