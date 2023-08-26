@@ -4,10 +4,10 @@ h1.style.cursor = "pointer";
 
 function handleTitleClick() {
   const clickedClass = "active";
-  if (h1.className === clickedClass) {
-    h1.className = "";
+  if (h1.classList.contains(clickedClass)) {
+    h1.classList.remove(clickedClass);
   } else {
-    h1.className = clickedClass;
+    h1.classList.add(clickedClass);
   }
 }
 
