@@ -1,31 +1,17 @@
-const grab = document.querySelector(".box h1");
+const h1 = document.querySelector(".box h1");
 
-console.dir(grab);
+h1.style.cursor = "pointer";
 
-function handleGrabClick() {
-  grab.style.color = "blue";
+function handleTitleClick() {
+  const currentColor = h1.style.color;
+  let newColor;
+  if (currentColor === "blue") {
+    newColor = "tomato";
+  } else {
+    newColor = "blue";
+  }
+  h1.style.color = newColor;
+  console.log(newColor);
 }
 
-function enterMouse() {
-  grab.innerText = "mouse is here";
-}
-
-function leaveMouse() {
-  grab.innerText = "mouse has left";
-}
-
-function handleWindowResize() {
-  grab.style.color = "tomato";
-}
-// grab.addEventListener("click", handleGrabClick);
-grab.onclick = handleGrabClick;
-grab.addEventListener("mouseenter", enterMouse);
-grab.addEventListener("mouseleave", leaveMouse);
-
-window.addEventListener("resize", handleWindowResize);
-
-function handleWindowCopy() {
-  alert("copy cat!!");
-}
-
-window.addEventListener("copy", handleWindowCopy);
+h1.addEventListener("click", handleTitleClick);
