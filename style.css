@@ -1,3 +1,16 @@
 body {
-  background-color: aquamarine;
+  background-color: rgb(252, 255, 211);
+}
+
+h1 {
+  color: cornflowerblue;
+  transition: 0.3s ease-in-out;
+}
+
+.active {
+  color: tomato;
+}
+
+.sexy-font {
+  font-family: "Courier New", Courier, monospace;
 }
