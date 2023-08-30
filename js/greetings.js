@@ -23,8 +23,6 @@ loginForm.addEventListener("submit", onLoginSubmit);
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
-console.log(savedUsername);
-
 if (savedUsername === null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
   greeting.classList.add(HIDDEN_CLASSNAME);
