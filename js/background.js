@@ -18,12 +18,12 @@ const images = [
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
+const mainWrap = document.querySelector(".main-wrap");
 const bgImage = document.createElement("img");
-bgImage.id = "main-bg";
-
+bgImage.classList.add("main-bg");
 bgImage.src = `img/${chosenImage}`;
 
-document.body.appendChild(bgImage);
+mainWrap.appendChild(bgImage);
 
 const blurContainer = document.querySelector(".blur-img");
 const blurImg = document.createElement("img");
