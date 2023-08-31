@@ -106,9 +106,18 @@ h4 {
 }
 
 #todo-list {
-  padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
+  min-height: 6em;
+  max-height: 50vh;
+  overflow-y: scroll;
+  width: 13.5rem;
+  border-radius: 0.8rem;
+  padding: 1rem;
   font-size: 1rem;
   font-weight: 200;
+  display: flex;
+  flex-direction: column;
 }
 
 #todo-list li {
@@ -118,6 +127,15 @@ h4 {
   padding-left: 0.6rem;
   position: relative;
   margin-bottom: 0.4rem;
+}
+
+#todo-list li#empty-todo {
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0 auto;
+  padding: 0;
+}
+#todo-list li#empty-todo::before {
+  display: none;
 }
 #todo-list li::before {
   position: absolute;
@@ -134,10 +152,12 @@ h4 {
 #todo-list span {
   display: block;
   margin-right: 0.3rem;
-  max-width: 12.1rem;
+  max-width: calc(100% - 1.4rem);
   word-wrap: break-word;
 }
 #todo-list button {
+  width: 1.4rem;
+  height: 1.4rem;
   font-size: 1rem;
   font-weight: 300;
   line-height: inherit;

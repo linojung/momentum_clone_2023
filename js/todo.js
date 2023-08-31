@@ -19,6 +19,11 @@ function paintTodo(newTodo) {
   const li = document.createElement("li");
   const span = document.createElement("span");
   const button = document.createElement("button");
+  const emptyLi = document.querySelector("#empty-todo");
+  if (emptyLi !== null) {
+    emptyLi.remove();
+  }
+
   li.id = newTodo.id;
   span.innerText = newTodo.text;
   button.innerText = "x";
@@ -48,4 +53,9 @@ if (savedTodos !== null) {
   const parsedTodos = JSON.parse(savedTodos);
   todos = parsedTodos;
   parsedTodos.forEach(paintTodo);
+} else {
+  const emptyLi = document.createElement("li");
+  emptyLi.id = "empty-todo";
+  emptyLi.innerText = "You Have No To-Do";
+  todoList.appendChild(emptyLi);
 }
