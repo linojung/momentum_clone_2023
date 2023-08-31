@@ -1,0 +1,48 @@
+.blur-img {
+  position: fixed;
+  z-index: -10;
+  left: calc(50% - 150vw / 2);
+  top: calc(50% - 150vh / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150vw;
+  height: 150vh;
+  overflow: hidden;
+  /* background-color: #000; */
+}
+.blur-img img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  filter: blur(5px) saturate(0.5) contrast(0.6) brightness(0.7);
+  opacity: 1;
+}
+
+.main-wrap {
+  width: 80vw;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  /* border: 3px solid rgba(255, 255, 255, 0.8); */
+}
+
+.main-bg {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -5;
+  filter: saturate(0.6) contrast(0.9) brightness(0.9);
+}
+
+#greeting {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
+  padding: var(--main-padding);
+}

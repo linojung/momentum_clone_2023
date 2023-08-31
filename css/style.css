@@ -1,11 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap");
 @import "reset.css";
+@import "background.css";
+@import "quotes.css";
+@import "clock.css";
+
+:root {
+  --main-padding: 1.2rem;
+}
+
 .hidden {
   display: none;
 }
 
 html {
   font-size: 16px;
+}
+
+@media screen and (max-width: 470px) {
+  html {
+    font-size: 12px;
+  }
 }
 
 body {
@@ -18,53 +32,4 @@ body {
   justify-content: center;
   align-items: center;
   color: #fff;
-}
-
-.blur-img {
-  position: fixed;
-  z-index: -10;
-  left: calc(50% - 150vw / 2);
-  top: calc(50% - 150vh / 2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150vw;
-  height: 150vh;
-  overflow: hidden;
-  /* background-color: #000; */
-}
-.blur-img img {
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
-  filter: blur(5px) saturate(0.5) contrast(0.6) brightness(0.7);
-  opacity: 1;
-}
-
-.main-wrap {
-  width: 80vw;
-  height: 80vh;
-  position: relative;
-  overflow: hidden;
-  border-radius: 2rem;
-  border: 3px solid rgba(255, 255, 255, 0.8);
-}
-
-.main-bg {
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -5;
-  filter: saturate(0.6) contrast(0.9) brightness(0.9);
-}
-
-#greeting {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-family: "Roboto Slab", serif;
-  font-weight: 100;
-  padding: 1.5rem;
 }
