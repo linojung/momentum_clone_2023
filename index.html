@@ -17,24 +17,33 @@
         />
         <button>Log In</button>
       </form>
-      <h1 id="greeting" class="hidden"></h1>
-      <h2 id="clock">00:00:00</h2>
-      <form id="todo-form">
-        <input
-          type="text"
-          placeholder="Write a To-Do and Press Enter"
-          required
-        />
-      </form>
-      <ul id="todo-list"></ul>
-      <div id="quote">
-        <span></span>
-        <i></i>
+      <div class="momentum__column momentum__column__left">
+        <h1 id="greeting" class="hidden"></h1>
+        <div class="todo-container">
+          <form id="todo-form">
+            <h4 class="todo-title">YOUR TO-DOs</h4>
+            <input
+              type="text"
+              placeholder="Write a To-Do and Press Enter"
+              required
+            />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
       </div>
-      <div id="geo">
-        <span class="geo__city"></span>
-        <span class="geo__weather"></span>
-        <span class="geo__temp"></span>
+
+      <div class="momentum__column momentum__column__right">
+        <h2 id="clock">00:00:00</h2>
+        <div id="geo">
+          <span class="geo__city"></span>
+          <span class="geo__weather"></span>
+          <span class="geo__temp"></span>
+        </div>
+        <div id="quote">
+          <h4 class="quote-title">Today's Quote</h4>
+          <span></span>
+          <i></i>
+        </div>
       </div>
     </div>
     <div class="blur-img"></div>

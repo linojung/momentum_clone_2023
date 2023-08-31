@@ -1,0 +1,89 @@
+.main-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.momentum__column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: var(--main-padding);
+  width: 50%;
+}
+
+.momentum__column > * {
+  margin-top: 3rem;
+}
+
+.momentum__column > *:first-child {
+  margin-top: 0;
+}
+
+.momentum__column__left {
+  text-align: left;
+}
+
+.momentum__column__right {
+  text-align: right;
+  justify-content: right;
+}
+
+h4 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+#greeting {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
+}
+
+#clock {
+  font-size: 3rem;
+}
+
+#quote {
+  font-size: 0.9rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+#quote > * {
+  display: block;
+}
+
+#quote i {
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+}
+
+.todo-container {
+}
+#todo-form {
+}
+
+#todo-form input {
+  background-color: transparent;
+  padding: 0.3rem 0;
+  width: 12.1rem;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+#todo-form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 200;
+}
+
+#todo-form input:focus {
+  border: 0px;
+}
