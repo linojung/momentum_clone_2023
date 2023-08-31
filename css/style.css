@@ -1,3 +1,32 @@
+@import "reset.css";
 .hidden {
   display: none;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.blur-img {
+  position: fixed;
+  z-index: -10;
+  left: -5vw;
+  top: -5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110vw;
+  height: 110vh;
+  overflow: hidden;
+  background-color: #000;
+}
+.blur-img img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  filter: blur(10px);
+  opacity: 0.5;
 }
