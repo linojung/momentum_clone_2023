@@ -1,7 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap");
 @import "reset.css";
 .hidden {
   display: none;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
@@ -33,7 +37,7 @@ body {
   width: inherit;
   height: inherit;
   object-fit: cover;
-  filter: blur(5px) saturate(50%) contrast(0.4) sepia(0.5);
+  filter: blur(5px) saturate(0.5) contrast(0.6) brightness(0.7);
   opacity: 1;
 }
 
@@ -42,8 +46,8 @@ body {
   height: 80vh;
   position: relative;
   overflow: hidden;
-  border-radius: 60px;
-  border: 3px solid #fff;
+  border-radius: 2rem;
+  border: 3px solid rgba(255, 255, 255, 0.8);
 }
 
 .main-bg {
@@ -54,9 +58,13 @@ body {
   left: 0;
   top: 0;
   z-index: -5;
-  filter: saturate(0.6) contrast(0.9);
+  filter: saturate(0.6) contrast(0.9) brightness(0.9);
 }
 
 #greeting {
-  font-size: 50px;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
+  padding: 1.5rem;
 }
