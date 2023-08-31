@@ -26,7 +26,7 @@
 
 .momentum__column__right {
   text-align: right;
-  justify-content: right;
+  align-items: flex-end;
 }
 
 h4 {
@@ -34,7 +34,7 @@ h4 {
   letter-spacing: 1px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
 }
 
 #greeting {
@@ -52,6 +52,7 @@ h4 {
   font-size: 0.9rem;
   font-weight: 200;
   line-height: 1.1;
+  width: 20rem;
 }
 #quote > * {
   display: block;
@@ -69,18 +70,15 @@ h4 {
 }
 
 #todo-form input {
-  background-color: transparent;
-  padding: 0.3rem 0;
-  width: 12.1rem;
-  border: none;
   border-bottom: 1px solid #fff;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  width: 13.5rem;
 }
 
 #todo-form input::placeholder {
   color: rgba(255, 255, 255, 0.5);
   font-weight: 200;
+  font-size: 0.9rem;
 }
 
 #todo-form input:focus {
@@ -89,7 +87,7 @@ h4 {
 
 #todo-list {
   padding: 1rem 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 200;
 }
 
@@ -99,6 +97,7 @@ h4 {
   align-items: center;
   padding-left: 0.6rem;
   position: relative;
+  margin-bottom: 0.4rem;
 }
 #todo-list li::before {
   position: absolute;
@@ -114,6 +113,12 @@ h4 {
 
 #todo-list span {
   display: block;
-  width: 12.1rem;
+  margin-right: 0.9rem;
+  max-width: 12.1rem;
   word-wrap: break-word;
+}
+#todo-list i {
+  font-size: 12px;
+  font-weight: 100;
+  cursor: pointer;
 }
