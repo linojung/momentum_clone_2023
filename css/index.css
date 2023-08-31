@@ -133,12 +133,13 @@ h4 {
 
 #todo-list span {
   display: block;
-  margin-right: 0.9rem;
+  margin-right: 0.3rem;
   max-width: 12.1rem;
   word-wrap: break-word;
 }
-#todo-list i {
-  font-size: 12px;
-  font-weight: 100;
+#todo-list button {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: inherit;
   cursor: pointer;
 }

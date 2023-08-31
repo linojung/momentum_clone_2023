@@ -18,10 +18,10 @@ function deleteTodo(event) {
 function paintTodo(newTodo) {
   const li = document.createElement("li");
   const span = document.createElement("span");
-  const button = document.createElement("i");
+  const button = document.createElement("button");
   li.id = newTodo.id;
   span.innerText = newTodo.text;
-  button.classList.add("far", "fa-trash-alt");
+  button.innerText = "x";
   todoList.appendChild(li);
   li.appendChild(span);
   li.appendChild(button);
