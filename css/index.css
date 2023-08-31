@@ -51,7 +51,6 @@ h4 {
 #quote {
   font-size: 0.9rem;
   font-weight: 200;
-  letter-spacing: 1px;
   line-height: 1.1;
 }
 #quote > * {
@@ -85,5 +84,36 @@ h4 {
 }
 
 #todo-form input:focus {
-  border: 0px;
+  outline: none;
+}
+
+#todo-list {
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 0.6rem;
+  position: relative;
+}
+#todo-list li::before {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 0.2rem / 2);
+  display: block;
+  content: "";
+  width: 0.2rem;
+  height: 0.2rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+#todo-list span {
+  display: block;
+  width: 12.1rem;
+  word-wrap: break-word;
 }
