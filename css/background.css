@@ -41,3 +41,47 @@
   z-index: -5;
   filter: saturate(0.6) contrast(0.9) brightness(0.9);
 }
+
+.login-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: calc(50% - (20rem / 2));
+  top: calc(50% - (20rem / 2));
+  width: 20rem;
+  height: 20rem;
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1.7rem 2rem;
+}
+
+#login-form p {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
+#login-form input {
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  font-weight: 200;
+  padding: 0.3rem 0;
+}
+
+#login-form input:focus {
+  outline: none;
+}
+
+#login-form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#login-form button {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0.6rem;
+  padding: 1rem 0;
+  width: 100%;
+  cursor: pointer;
+}
