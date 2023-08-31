@@ -13,20 +13,26 @@ body {
 .blur-img {
   position: fixed;
   z-index: -10;
-  left: -5vw;
-  top: -5vw;
+  left: calc(50% - 150vw / 2);
+  top: calc(50% - 150vh / 2);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 110vw;
-  height: 110vh;
+  width: 150vw;
+  height: 150vh;
   overflow: hidden;
-  background-color: #000;
+  /* background-color: #000; */
 }
 .blur-img img {
   width: inherit;
   height: inherit;
   object-fit: cover;
-  filter: blur(10px);
-  opacity: 0.5;
+  filter: blur(5px) saturate(50%) contrast(40%);
+  opacity: 1;
+}
+
+#main-bg {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }

@@ -19,6 +19,7 @@ const images = [
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
 const bgImage = document.createElement("img");
+bgImage.id = "main-bg";
 
 bgImage.src = `img/${chosenImage}`;
 
@@ -30,3 +31,5 @@ const blurImg = document.createElement("img");
 blurImg.src = `img/${chosenImage}`;
 
 blurContainer.appendChild(blurImg);
+
+//color-thief

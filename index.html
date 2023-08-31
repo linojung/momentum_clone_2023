@@ -7,29 +7,35 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <form id="login-form">
-      <input
-        type="text"
-        placeholder="What is your name?"
-        required
-        maxlength="15"
-      />
-      <button>Log In</button>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <h2 id="clock">00:00:00</h2>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To-Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <i></i>
-    </div>
-    <div id="geo">
-      <span class="geo__city"></span>
-      <span class="geo__weather"></span>
-      <span class="geo__temp"></span>
+    <div class="main-wrap">
+      <form id="login-form">
+        <input
+          type="text"
+          placeholder="What is your name?"
+          required
+          maxlength="15"
+        />
+        <button>Log In</button>
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+      <h2 id="clock">00:00:00</h2>
+      <form id="todo-form">
+        <input
+          type="text"
+          placeholder="Write a To-Do and Press Enter"
+          required
+        />
+      </form>
+      <ul id="todo-list"></ul>
+      <div id="quote">
+        <span></span>
+        <i></i>
+      </div>
+      <div id="geo">
+        <span class="geo__city"></span>
+        <span class="geo__weather"></span>
+        <span class="geo__temp"></span>
+      </div>
     </div>
     <div class="blur-img"></div>
     <script src="js/greetings.js"></script>
