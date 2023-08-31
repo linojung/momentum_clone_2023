@@ -110,7 +110,7 @@ h4 {
   margin-top: 1rem;
   min-height: 6em;
   max-height: 50vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   width: 13.5rem;
   border-radius: 0.8rem;
   padding: 1rem;

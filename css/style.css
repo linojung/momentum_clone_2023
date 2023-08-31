@@ -18,12 +18,12 @@
   }
   to {
     opacity: 0;
-    display: none;
   }
 }
 
 .hidden {
   animation: hidden 0.4s ease-in-out forwards;
+  display: none;
 }
 
 html {
