@@ -1,0 +1,5 @@
+/* Chrome, Whale, Edge */
+
+/* 스크롤바 트랙 꾸미기 */
+*::-webkit-scrollbar-track {
+}

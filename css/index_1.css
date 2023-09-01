@@ -87,16 +87,13 @@
 }
 
 .main-wrap {
-  position: relative;
-  /* display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start; */
+  align-items: flex-start;
 }
 
 .momentum__column {
-  position: absolute;
-  top: 0;
   display: flex;
   width: 50%;
   flex-wrap: wrap;
@@ -114,11 +111,9 @@
 
 .momentum__column__left {
   text-align: left;
-  left: 0;
 }
 
 .momentum__column__right {
-  right: 0;
   text-align: right;
   align-items: flex-end;
   justify-content: baseline;
@@ -155,19 +150,14 @@ h4 {
 }
 
 #clock {
-}
-.clock__hour-min {
   font-size: 3rem;
-}
-.clock__sec {
-  display: block;
-  font-size: 1rem;
 }
 
 #quote {
   font-size: 0.9rem;
   font-weight: 200;
   line-height: 1.1;
+  /* width: 20rem; */
 }
 #quote > * {
   display: block;
@@ -204,7 +194,7 @@ h4 {
 }
 
 #todo-list {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
   margin-top: 1rem;
   min-height: 6em;
   max-height: 50vh;
@@ -272,13 +262,6 @@ h4 {
   cursor: pointer;
 }
 
-#geo > * {
-  display: block;
-}
-
 #today-date {
-  position: absolute;
-  bottom: var(--main-padding);
-  right: var(--main-padding);
   font-size: 8rem;
 }

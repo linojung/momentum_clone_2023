@@ -38,11 +38,14 @@
       </div>
 
       <div class="momentum__column momentum__column__right">
-        <h2 id="clock">00:00:00</h2>
+        <h2 id="clock">
+          <span class="clock__hour-min">00:00</span>
+          <span class="clock__sec">00</span>
+        </h2>
         <div id="geo">
-          <span class="geo__city"></span>
           <span class="geo__weather"></span>
           <span class="geo__temp"></span>
+          <span class="geo__city">Can't find weather</span>
         </div>
         <div id="quote">
           <h4 class="quote-title">Today's Quote</h4>
@@ -50,6 +53,7 @@
           <i></i>
         </div>
       </div>
+      <div id="today-date"></div>
     </div>
     <div class="blur-img"></div>
     <script
@@ -62,5 +66,6 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/date.js"></script>
   </body>
 </html>
