@@ -285,14 +285,11 @@ h4 {
 
 #logo {
   position: absolute;
-  border: 3px solid #fff;
-  width: 5rem;
-  height: 5rem;
   top: var(--main-padding);
   left: calc(50% - (70px / 2));
   border-radius: 0.7rem;
   font-size: 4rem;
-  font-family: "Outfit", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 100;
 }
 
