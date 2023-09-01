@@ -20,7 +20,7 @@
           <button>LOG IN</button>
         </div>
       </form>
-      <div class="momentum__column momentum__column__left">
+      <div class="momentum__column momentum__column__left hidden">
         <h1 id="greeting" class="hidden"></h1>
         <div class="todo-container">
           <form id="todo-form">
@@ -37,7 +37,7 @@
         </div>
       </div>
 
-      <div class="momentum__column momentum__column__right">
+      <div class="momentum__column momentum__column__right hidden">
         <h2 id="clock">
           <span class="clock__hour-min">00:00</span>
           <span class="clock__sec">00</span>
@@ -53,7 +53,10 @@
           <i></i>
         </div>
       </div>
-      <div id="today-date"></div>
+      <div class="momentum__column momentum__column__absolute">
+        <div id="logo">Qantum</div>
+        <div id="today-date"></div>
+      </div>
     </div>
     <div class="blur-img"></div>
     <script
