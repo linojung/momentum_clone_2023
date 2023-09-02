@@ -275,6 +275,7 @@ h4 {
   align-items: center;
   margin-left: 0.3rem;
   max-width: 70%;
+  cursor: pointer;
 }
 
 #todo-list label.todo-crossed span {

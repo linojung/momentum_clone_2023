@@ -4,9 +4,18 @@ const todoList = document.querySelector("#todo-list");
 const TODOS_KEY = "todos";
 const EMPTYTOOD_TEXT = document.querySelector("#empty-todo").innerText;
 let todos = [];
+const BOX_ICON_EMPTY = "fa-square";
+const BOX_ICON_CHECKED = "fa-check-square";
+const LABEL_CROSSED = "todo-crossed";
+const CHECK_KEY = "check";
+let checkedTodos = [];
 
 function saveTodos() {
   localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
+}
+
+function saveChecked() {
+  localStorage.setItem(CHECK_KEY, JSON.stringify(checkedTodos));
 }
 
 function addEmptyTodo() {
@@ -27,14 +36,6 @@ function deleteTodo(event) {
   }
 }
 
-const BOX_ICON_EMPTY = "fa-square";
-const BOX_ICON_CHECKED = "fa-check-square";
-const LABEL_CROSSED = "todo-crossed";
-const CHECK_KEY = "check";
-let checkedTodos = [];
-function saveChecked() {
-  localStorage.setItem(CHECK_KEY, JSON.stringify(checkedTodos));
-}
 function handleCheckBoxChange(event) {
   const ID = event.target.parentNode.id;
   const newCheckedObject = {
