@@ -35,6 +35,13 @@ function deleteTodo(event) {
   }
 }
 
+function checkLabel(checkBox) {
+  const label = checkBox.parentNode.querySelector("label");
+  const fakeBox = checkBox.parentNode.querySelector("img");
+  fakeBox.setAttribute("src", BOX_ICON_CHECKED);
+  label.classList.add(LABEL_CROSSED);
+}
+
 function handleCheckBoxChange(event) {
   const id = event.target.parentNode.id;
   const checkedId = {
@@ -105,7 +112,9 @@ function checkHasId(checkedTodo) {
   let id = checkedTodo.checkedId;
   id = JSON.stringify(id);
   const liHasId = document.getElementById(id);
-  console.log(liHasId);
+  const checkInput = liHasId.querySelector("input[type='checkbox']");
+  checkInput.checked = true;
+  checkLabel(checkInput);
 }
 //on page load
 
