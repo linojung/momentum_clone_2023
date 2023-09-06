@@ -409,8 +409,16 @@ h4 {
   position: absolute;
   bottom: var(--main-padding);
   left: var(--main-padding);
-  font-size: 1.3rem;
 }
 #setting i {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: block;
   cursor: pointer;
+}
+
+#setting img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
 }
