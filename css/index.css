@@ -159,7 +159,7 @@ h4 {
 #clock {
 }
 .clock__hour-min {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .clock__sec {
   display: block;
@@ -211,7 +211,7 @@ h4 {
   background-color: rgba(0, 0, 0, 0.1);
   margin-top: 1rem;
   min-height: 6em;
-  max-height: 50vh;
+  max-height: 40vh;
   overflow-y: auto;
   width: 13.5rem;
   border-radius: 0.8rem;
@@ -403,4 +403,14 @@ h4 {
   right: var(--main-padding);
   font-size: 8rem;
   font-weight: 100;
+}
+
+#setting {
+  position: absolute;
+  bottom: var(--main-padding);
+  left: var(--main-padding);
+  font-size: 1.3rem;
+}
+#setting i {
+  cursor: pointer;
 }
