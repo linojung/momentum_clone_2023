@@ -213,6 +213,7 @@ h4 {
   min-height: 6em;
   max-height: 40vh;
   overflow-y: auto;
+  overflow-x: hidden;
   width: 13.5rem;
   border-radius: 0.8rem;
   padding: 1rem;
@@ -283,16 +284,15 @@ h4 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-#todo-list label i {
-  color: rgba(255, 255, 255, 0.7);
+#todo-list label img {
+  width: 0.9rem;
+  height: 0.9rem;
+  object-fit: cover;
   margin-right: 0.5rem;
-  /* width: 1rem;
-  height: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.3); */
 }
 
 #todo-list span {
-  word-wrap: break-word;
+  word-break: break-all;
   text-align: left;
 }
 #todo-list button {
