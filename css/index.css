@@ -207,16 +207,18 @@ h4 {
   outline: none;
 }
 
-#todo-list {
+.todo-list-wrap {
   background-color: rgba(0, 0, 0, 0.1);
+  width: 13.5rem;
   margin-top: 1rem;
-  min-height: 6em;
+  padding: 1rem;
+}
+
+#todo-list {
+  min-height: 6rem;
   max-height: 40vh;
   overflow-y: auto;
   overflow-x: hidden;
-  width: 13.5rem;
-  border-radius: 0.8rem;
-  padding: 1rem;
   font-size: 1rem;
   font-weight: 200;
   display: flex;
@@ -253,6 +255,24 @@ h4 {
   margin: 0 auto;
   padding: 0;
 }
+
+#delete-todo {
+  margin-top: 1rem;
+  opacity: 0.9;
+}
+.todo__delete-selected {
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 200;
+  align-items: baseline;
+}
+
+.todo__delete-selected img {
+  width: 0.8rem;
+  height: 0.8rem;
+  object-fit: contain;
+  margin-right: 4px;
+}
 /* #todo-list li#empty-todo::before {
   display: none;
 } */
@@ -267,10 +287,13 @@ h4 {
   background-color: #fff;
   border-radius: 50%;
 } */
-#todo-list input[type="checkbox"] {
+#todo-all {
+  margin-bottom: 1rem;
+}
+.todo-list-wrap input[type="checkbox"] {
   display: none;
 }
-#todo-list label {
+.todo-list-wrap label {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -284,14 +307,14 @@ h4 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-#todo-list label img {
+.todo-list-wrap label img {
   width: 0.9rem;
   height: 0.9rem;
   object-fit: cover;
   margin-right: 0.5rem;
 }
 
-#todo-list span {
+.todo-list-wrap span {
   word-break: break-all;
   text-align: left;
 }

@@ -24,16 +24,31 @@
         <h1 id="greeting" class="hidden"></h1>
         <div class="todo-container">
           <form id="todo-form">
-            <h4 class="todo-title">YOUR TO-DOs</h4>
+            <h4 class="todo-title">Make A TO-DO</h4>
             <input
               type="text"
               placeholder="Write a To-Do and Press Enter"
               required
             />
           </form>
-          <ul id="todo-list">
-            <li id="empty-todo">You Have No To-Do</li>
-          </ul>
+          <div class="todo-list-wrap">
+            <div id="todo-all">
+              <input type="checkbox" id="check-all-todos" />
+              <label for="check-all-todos">
+                <img src="img/checkbox-empty.png" alt="icon" />
+                <span>TO-DOs</span>
+              </label>
+            </div>
+            <ul id="todo-list">
+              <li id="empty-todo">You Have No To-Do</li>
+            </ul>
+            <div id="delete-todo">
+              <a href="" class="todo__delete-selected">
+                <img src="img/trash-bin.png" alt="icon" />
+                <span>Delete Selected</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
