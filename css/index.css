@@ -291,7 +291,7 @@ h4 {
   margin-bottom: 1rem;
 }
 .todo-list-wrap input[type="checkbox"] {
-  display: none;
+  /* display: none; */
 }
 .todo-list-wrap label {
   display: flex;
