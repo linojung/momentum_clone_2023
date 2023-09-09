@@ -299,10 +299,13 @@ h4 {
   margin-left: 0.3rem;
   max-width: 70%;
   cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .todo-list-wrap label > * {
-  display: inline-block;
+  display: block;
 }
 
 .todo-list-wrap .todo-checked span {
@@ -316,20 +319,21 @@ h4 {
 }
 
 .todo-list-wrap label .checkbox-img {
-  width: 0.9rem;
-  height: 0.9rem;
+  width: 1rem;
+  height: 1rem;
   background: url(../img/checkbox-empty.png) no-repeat;
-  background-size: contain;
+  background-size: cover;
   margin-right: 0.5rem;
+  flex-shrink: 0;
 }
 
 .todo-list-wrap .todo-checked .checkbox-img {
   background: url(../img/checkbox-checked.png) no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .todo-list-wrap span {
-  word-break: break-all;
+  word-break: break-word;
   text-align: left;
 }
 #todo-list button {
