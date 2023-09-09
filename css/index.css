@@ -261,6 +261,8 @@ h4 {
   opacity: 0.9;
 }
 .todo__delete-selected {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 1rem;
   display: flex;
   font-size: 0.9rem;
   font-weight: 200;
@@ -291,27 +293,39 @@ h4 {
   margin-bottom: 1rem;
 }
 .todo-list-wrap input[type="checkbox"] {
-  /* display: none; */
+  display: none;
 }
 .todo-list-wrap label {
-  display: flex;
-  justify-content: left;
-  align-items: center;
   margin-left: 0.3rem;
   max-width: 70%;
   cursor: pointer;
 }
 
-#todo-list label.todo-crossed span {
+.todo-list-wrap label > * {
+  display: inline-block;
+}
+
+.todo-list-wrap .todo-checked span {
   text-decoration: line-through;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.todo-list-wrap label img {
+.todo-list-wrap #todo-all.todo-checked span {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+.todo-list-wrap label .checkbox-img {
   width: 0.9rem;
   height: 0.9rem;
-  object-fit: cover;
+  background: url(../img/checkbox-empty.png) no-repeat;
+  background-size: contain;
   margin-right: 0.5rem;
+}
+
+.todo-list-wrap .todo-checked .checkbox-img {
+  background: url(../img/checkbox-checked.png) no-repeat;
+  background-size: contain;
 }
 
 .todo-list-wrap span {
