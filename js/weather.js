@@ -13,25 +13,8 @@
 //       const temp = document.querySelector(".geo__temp");
 //       const weatherData = data.weather[0].main;
 //       city.innerText = data.name;
-//       temp.innerText = `${data.main.temp}°c`;
+//       temp.innerText = `${data.main.temp}°c (${weatherData})`;
 
-//       const icon = document.createElement("i");
-//       weather.appendChild(icon);
-//       if (weatherData === "Clouds") {
-//         icon.classList.add("fas", "fa-cloud");
-//       } else if (weather === "Clear") {
-//         icon.classList.add("fas", "fa-sun");
-//       } else if (weather === "Atmosphere") {
-//         icon.classList.add("fas", "fa-smog");
-//       } else if (weather === "Snow") {
-//         icon.classList.add("fas", "fa-snowflake");
-//       } else if (weather === "Rain") {
-//         icon.classList.add("fas", "fa-cloud-showers-heavy");
-//       } else if (weather === "Drizzle") {
-//         icon.classList.add("fas", "fa-cloud-rain");
-//       } else if (weather === "Thunderstorm") {
-//         icon.classList.add("fas", "fa-bolt");
-//       }
 //     });
 // }
 

@@ -60,7 +60,7 @@
 #login-form p {
   font-family: "Roboto Slab", serif;
   font-size: 1.3rem;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 #login-form input {
@@ -159,7 +159,7 @@ h4 {
 #clock {
 }
 .clock__hour-min {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 .clock__sec {
   display: block;
@@ -352,7 +352,7 @@ h4 {
 }
 
 #geo {
-  font-weight: 100;
+  font-weight: 200;
 }
 
 #geo > * {
@@ -381,7 +381,7 @@ h4 {
 .logo__welcome {
   font-size: 0.7rem;
   margin-bottom: 0.3rem;
-  font-weight: 100;
+  font-weight: 200;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   cursor: default;
@@ -392,7 +392,7 @@ h4 {
   display: block;
   font-size: 2rem;
   font-family: "Dosis", sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   position: relative;
 }
 
@@ -421,7 +421,7 @@ h4 {
 
 .logo__refresh span {
   display: block;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 0.9rem;
   transform: translateY(-2rem);
   transition: all 0.4s ease-in-out;
@@ -439,10 +439,10 @@ h4 {
   /* font-family: 'Outfit', sans-serif; */
   /* font-family: 'Noto Sans KR', sans-serif; */
   /* font-family: 'Dosis', sans-serif; */
-  position: absolute;
+  /* position: absolute;
   bottom: var(--main-padding);
-  right: var(--main-padding);
-  font-size: 8rem;
+  right: var(--main-padding); */
+  font-size: 3.5rem;
   font-weight: 100;
 }
 
@@ -462,4 +462,63 @@ h4 {
   width: inherit;
   height: inherit;
   object-fit: contain;
+}
+
+#find {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.find__go::before {
+  display: block;
+  content: "";
+  width: 50%;
+  height: 50%;
+  background: url(../img/find.png) no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+}
+.find__go {
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+  text-indent: -99999px;
+  overflow: hidden;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.find__list img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+}
+
+.find__list {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.find__list li {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.find__list li:first-child {
 }
