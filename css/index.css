@@ -515,9 +515,17 @@ h4 {
 
 .find__list li {
   position: absolute;
-  left: 50%;
-  top: 20%;
-  transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  left: calc(50% - 1rem);
+  top: calc(50% - 1rem);
+}
+
+.find__list img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
 }
 
 .find__list li:first-child {
