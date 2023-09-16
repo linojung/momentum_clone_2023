@@ -213,6 +213,7 @@ h4 {
   width: 13.5rem;
   margin-top: 1rem;
   padding: 1rem;
+  border-radius: var(--main-radius);
 }
 
 #todo-list {
@@ -360,13 +361,34 @@ h4 {
 }
 
 #geo > * {
-  display: block;
+  text-align: center;
+}
+
+.geo__weather {
+  justify-content: center;
+  display: flex;
+  align-items: baseline;
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+.geo__weather img {
+  margin-left: 0.4rem;
+  height: 1.3rem;
+  object-fit: contain;
 }
 
 .geo__temp {
+  display: block;
   font-size: 1.3rem;
   font-weight: 500;
-  margin: 0.3rem 0;
+}
+.geo__city {
+  font-size: 0.9rem;
+  text-align: center;
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 /* MOMENTUM__COLUMN__ABSOLUTE */
 .momentum__column__absolute {
