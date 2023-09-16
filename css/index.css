@@ -157,14 +157,25 @@ h4 {
 }
 
 #clock {
+  position: relative;
   margin-top: 0.6rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: var(--main-padding);
+  border-radius: var(--main-radius);
+  text-align: center;
 }
 .clock__hour-min {
   font-size: 2.5rem;
 }
 .clock__sec {
+  position: absolute;
+  right: 0.8rem;
+  bottom: calc(50% - 0.5rem);
   display: block;
   font-size: 1rem;
+  line-height: 1;
+  font-weight: 200;
+  opacity: 0.5;
 }
 
 #quote {
@@ -191,7 +202,7 @@ h4 {
 }
 
 #todo-form input {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 0.9rem;
   width: 13.5rem;
   font-weight: 200;
@@ -263,7 +274,7 @@ h4 {
   opacity: 0.9;
 }
 .todo__delete-selected {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 1rem;
   display: flex;
   font-size: 0.9rem;
@@ -367,14 +378,14 @@ h4 {
 .geo__weather {
   justify-content: center;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   font-size: 0.7rem;
   margin-bottom: 0.5rem;
 }
 .geo__weather img {
   margin-left: 0.4rem;
   height: 1.3rem;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .geo__temp {

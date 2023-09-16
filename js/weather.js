@@ -3,7 +3,7 @@ const API_KEY = "b30cb7bb6ffb53a3b485a06e8874a96b";
 function onGeoOk(position) {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
-  console.log("you live in", lat, lon);
+  //   console.log("you live in", lat, lon);
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
   fetch(url)
     .then((response) => response.json())
@@ -17,7 +17,7 @@ function onGeoOk(position) {
       city.innerText = data.name;
       temp.innerText = `${data.main.temp}°c`;
       const icon = document.createElement("img");
-      weather.innerText = weatherDescription;
+      weather.innerText = "";
       weather.append(icon);
       if (weatherData === "Rain") {
         icon.setAttribute("src", "img/weather/rain.png");
