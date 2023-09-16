@@ -161,6 +161,7 @@ h4 {
   margin-top: 0.6rem;
   background-color: rgba(0, 0, 0, 0.1);
   padding: var(--main-padding);
+  padding-right: calc(var(--main-padding) + 3rem);
   border-radius: var(--main-radius);
   text-align: center;
 }
@@ -169,11 +170,16 @@ h4 {
 }
 .clock__sec {
   position: absolute;
-  right: 0.8rem;
-  bottom: calc(50% - 0.5rem);
-  display: block;
+  right: 0;
+  bottom: 0;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0 var(--main-radius) var(--main-radius) 0;
   font-size: 1rem;
-  line-height: 1;
+  height: 100%;
   font-weight: 200;
   opacity: 0.5;
 }
@@ -374,6 +380,11 @@ h4 {
 #geo > * {
   text-align: center;
 }
+#geo > *:first-child {
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 
 .geo__weather {
   justify-content: center;
@@ -396,10 +407,8 @@ h4 {
 .geo__city {
   font-size: 0.9rem;
   text-align: center;
-  padding-bottom: 0.6rem;
-  margin-bottom: 0.6rem;
+
   display: block;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 /* MOMENTUM__COLUMN__ABSOLUTE */
 .momentum__column__absolute {
