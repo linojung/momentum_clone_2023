@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Momentum App</title>
+    <title>Quantum - Everyday Around</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -24,28 +24,47 @@
         <h1 id="greeting" class="hidden"></h1>
         <div class="todo-container">
           <form id="todo-form">
-            <h4 class="todo-title">YOUR TO-DOs</h4>
+            <h4 class="todo-title">Make A TO-DO</h4>
             <input
               type="text"
               placeholder="Write a To-Do and Press Enter"
               required
             />
           </form>
-          <ul id="todo-list">
-            <li id="empty-todo">You Have No To-Do</li>
-          </ul>
+          <div class="todo-list-wrap">
+            <div id="todo-all">
+              <input type="checkbox" id="check-all-todos" />
+              <label for="check-all-todos">
+                <i class="checkbox-img"></i>
+                <span>TO-DOs</span>
+              </label>
+            </div>
+            <ul id="todo-list">
+              <li id="empty-todo">You Have No To-Do</li>
+            </ul>
+            <div id="todo-delete">
+              <a href="" class="todo__delete-selected">
+                <img src="img/trash-bin.png" alt="icon" />
+                <span>Delete Selected</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="momentum__column momentum__column__right hidden">
-        <h2 id="clock">
-          <span class="clock__hour-min">00:00</span>
-          <span class="clock__sec">00</span>
-        </h2>
+        <div>
+          <div id="today-date"></div>
+          <h2 id="clock">
+            <span class="clock__hour-min">00:00</span>
+            <span class="clock__sec">00</span>
+          </h2>
+        </div>
         <div id="geo">
-          <span class="geo__weather"></span>
+          <span class="geo__city">can't find location</span>
+
+          <span class="geo__weather">no weather data</span>
           <span class="geo__temp"></span>
-          <span class="geo__city">Can't find weather</span>
         </div>
         <div id="quote">
           <h4 class="quote-title">Today's Quote</h4>
@@ -53,16 +72,23 @@
           <i></i>
         </div>
       </div>
-      <div class="momentum__column momentum__column__absolute">
-        <div id="logo">Qantum</div>
-        <div id="today-date"></div>
+      <div class="momentum__column momentum__column__absolute"></div>
+      <div id="logo">
+        <span class="logo__welcome">Welcome to</span>
+        <a href="index.html" class="logo__link">
+          Quantum
+          <div class="logo__bar">
+            <span></span>
+          </div>
+          <div class="logo__refresh"><span>Refresh</span></div>
+        </a>
+      </div>
+      <div id="setting">
+        <i><img src="img/setting.png" alt="setting" /></i>
       </div>
     </div>
+
     <div class="blur-img"></div>
-    <script
-      src="https://kit.fontawesome.com/6478f529f2.js"
-      crossorigin="anonymous"
-    ></script>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
@@ -70,5 +96,6 @@
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/date.js"></script>
+    <script src="js/css.js"></script>
   </body>
 </html>

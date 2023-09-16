@@ -11,6 +11,7 @@
 /* font-family: 'Dosis', sans-serif; */
 :root {
   --main-padding: 1.2rem;
+  --main-radius: 0.8rem;
 }
 
 @keyframes hidden {
